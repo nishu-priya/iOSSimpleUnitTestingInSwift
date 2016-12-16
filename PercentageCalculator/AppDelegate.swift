@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  PercentageCalculator
 //
-//  Created by Maxime Defauw on 03/02/16.
-//  Copyright © 2016 App Coda. All rights reserved.
+//  Created by Nishu Priya on 16/12/16.
+//  Copyright © 2016 Nishu Priya. All rights reserved.
 //
 
 import UIKit

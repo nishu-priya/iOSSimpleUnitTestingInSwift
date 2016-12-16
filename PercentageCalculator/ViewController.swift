@@ -62,6 +62,14 @@ class ViewController: UIViewController {
     }
     
     
+    func asynchronouslyFindPercentage(value: Float, _ percentage: Float, completionHandler : ((Float)->Void)){
+        let qualityOfServiceClass = QOS_CLASS_BACKGROUND
+        let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
+        dispatch_async(backgroundQueue, {
+            let value = value * (percentage / 100)
+            completionHandler(value)
+        })
+    }
     
     // MARK: - System methods
     override func viewDidLoad() {

@@ -1,5 +1,5 @@
-general:
-  build_dir: ProjectDir
+# general:
+#   build_dir: ProjectDir
 machine:
   xcode:
     version: "9.1"
